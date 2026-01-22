@@ -341,19 +341,19 @@ def create_default_router() -> Router:
         "钉钉机器人 Webhook"
     )
     
-    # 企业微信机器人 Webhook
-    router.register(
-        "/bot/wecom", "POST",
-        lambda form: JsonResponse({"error": "Use POST with JSON body"}),
-        "企业微信机器人 Webhook"
-    )
+    # 企业微信机器人 Webhook（开发中）
+    # router.register(
+    #     "/bot/wecom", "POST",
+    #     lambda form: JsonResponse({"error": "Use POST with JSON body"}),
+    #     "企业微信机器人 Webhook"
+    # )
     
-    # Telegram 机器人 Webhook
-    router.register(
-        "/bot/telegram", "POST",
-        lambda form: JsonResponse({"error": "Use POST with JSON body"}),
-        "Telegram 机器人 Webhook"
-    )
+    # Telegram 机器人 Webhook（开发中）
+    # router.register(
+    #     "/bot/telegram", "POST",
+    #     lambda form: JsonResponse({"error": "Use POST with JSON body"}),
+    #     "Telegram 机器人 Webhook"
+    # )
     
     return router
 

@@ -14,15 +14,11 @@
 from bot.platforms.base import BotPlatform
 from bot.platforms.feishu import FeishuPlatform
 from bot.platforms.dingtalk import DingtalkPlatform
-from bot.platforms.wecom import WecomPlatform
-from bot.platforms.telegram import TelegramPlatform
 
 # 所有可用平台（Webhook 模式）
 ALL_PLATFORMS = {
     'feishu': FeishuPlatform,
     'dingtalk': DingtalkPlatform,
-    'wecom': WecomPlatform,
-    'telegram': TelegramPlatform,
 }
 
 # 钉钉 Stream 模式（可选）
@@ -45,8 +41,6 @@ __all__ = [
     'BotPlatform',
     'FeishuPlatform',
     'DingtalkPlatform',
-    'WecomPlatform',
-    'TelegramPlatform',
     'ALL_PLATFORMS',
     # Stream 模式
     'DingtalkStreamClient',
